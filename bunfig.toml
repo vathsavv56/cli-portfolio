@@ -1,0 +1,3 @@
+[test]
+# Keep test output readable in CI and local terminals.
+coverage = false

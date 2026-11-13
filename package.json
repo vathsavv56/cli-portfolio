@@ -1,0 +1,59 @@
+{
+  "name": "@vathsavv56/v56",
+  "version": "1.1.0",
+  "description": "Vathsav Inavolu's portfolio, in your terminal. A small Ink-powered TUI and a plain-text fallback.",
+  "type": "module",
+  "bin": {
+    "v56": "dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "exports": {
+    ".": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "portfolio",
+    "terminal",
+    "cli",
+    "ink",
+    "v56",
+    "interactive"
+  ],
+  "author": "Vathsav Inavolu <inavoluvathsav@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://vathsavv56.vercel.app/",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "bun@1.4.4",
+  "scripts": {
+    "dev": "bun src/cli.tsx",
+    "preview": "bun scripts/preview.tsx",
+    "build": "bun scripts/build.ts",
+    "start": "bun src/cli.tsx",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "typecheck": "tsc --noEmit",
+    "check": "bun run typecheck && bun test",
+    "prepublishOnly": "bun run check && bun run build"
+  },
+  "dependencies": {
+    "ink": "^6.8.0",
+    "open": "^11.0.0",
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.3.0",
+    "ink-testing-library": "^4.0.0",
+    "typescript": "^6.0.2"
+  }
+}
