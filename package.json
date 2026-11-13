@@ -26,6 +26,13 @@
   "author": "Vathsav Inavolu <inavoluvathsav@gmail.com>",
   "license": "MIT",
   "homepage": "https://vathsavv56.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vathsavv56/cli-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vathsavv56/cli-portfolio/issues"
+  },
   "publishConfig": {
     "access": "public"
   },
